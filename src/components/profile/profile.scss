@@ -1,0 +1,29 @@
+.Profile {
+  text-align: center;
+
+  &-avatar {
+    // animation: Profile-avatar-spin infinite 20s linear;
+    width: 200px;
+    border-radius: 80px;
+  }
+  
+  &-icon {
+    color: #ffffff;
+    margin: 0 10px 0 10px;
+  }
+
+  .bar {
+    width: 30%;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,.14);
+  }
+}
+
+@keyframes Profile-avatar-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
