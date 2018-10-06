@@ -4,14 +4,24 @@ import './profile.scss';
 
 const Contact = () => {
   return (
-    <div className="social expanded">
-      <a rel="me" target="_blank" href="https://www.linkedin.com/in/kullapat-theera-angkananon-4905b874/" title="LinkedIn">
+    <nav>
+      <a
+        rel="me"
+        target="_blank"
+        href="https://www.linkedin.com/in/kullapat-theera-angkananon-4905b874/"
+        title="Go to -> LinkedIn"
+      >
         <i className="Profile-icon fa fa-linkedin-square" />
       </a>
-      <a rel="me" target="_blank" href="https://github.com/kullapat-t" title="Github">
+      <a
+        rel="me"
+        target="_blank"
+        href="https://github.com/kullapat-t"
+        title="Go to -> Github"
+      >
         <i className="Profile-icon fa fa-github"></i>
       </a>
-    </div>
+    </nav>
   );
 };
 
@@ -23,11 +33,7 @@ const Profile = () => {
       <hr className="bar"/>
       <span>Developer</span>
       <hr className="bar"/>
-      <div className="profile contact">
-        <nav className="navigation right">
-          <Contact/>
-        </nav>
-      </div>
+      <Contact/>
     </div>
   )
 };

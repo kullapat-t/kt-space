@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
-import './App.css';
-import Profile from './components/profile/Profile';
-import Footer from './components/footer/Footer';
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from 'react-router-dom';
+import Home from './components/home/Home';
+import Experiment from './components/experiment/Experiment';
+import MainLayout from './components/MainLayout';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <Profile/>
-        </header>
-        <footer>
-          <Footer />
-        </footer>
-      </div>
+      <Router>
+        <MainLayout>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/dev" component={Experiment} />
+            <Redirect from="*" to="/" />
+          </Switch>
+        </MainLayout>
+      </Router>
     );
   }
 }
