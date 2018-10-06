@@ -8,6 +8,7 @@ import {
 import Home from './components/home/Home';
 import Experiment from './components/experiment/Experiment';
 import MainLayout from './components/MainLayout';
+import { Resume } from './components/resume/Resume';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/dev" component={Experiment} />
+            <Route exact path="/resume" component={Resume} />
             <Redirect from="*" to="/" />
           </Switch>
         </MainLayout>

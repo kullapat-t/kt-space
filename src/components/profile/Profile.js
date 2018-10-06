@@ -8,7 +8,7 @@ const Contact = () => {
       <a
         rel="me"
         target="_blank"
-        href="https://www.linkedin.com/in/kullapat-theera-angkananon-4905b874/"
+        href="https://www.linkedin.com/in/kullapat-t/"
         title="Go to -> LinkedIn"
       >
         <i className="Profile-icon fa fa-linkedin-square" />
@@ -16,7 +16,7 @@ const Contact = () => {
       <a
         rel="me"
         target="_blank"
-        href="https://github.com/kullapat-t"
+        href="https://github.com/kullapat-t/"
         title="Go to -> Github"
       >
         <i className="Profile-icon fa fa-github"></i>
@@ -31,7 +31,7 @@ const Profile = () => {
       <img src={avatar} className="Profile-avatar" alt="logo" />
       <div className="Profile-title">Kullapat Theera-angkananon</div>
       <hr className="bar"/>
-      <span>Developer</span>
+      <span>Full Stack Developer</span>
       <hr className="bar"/>
       <Contact/>
     </div>
