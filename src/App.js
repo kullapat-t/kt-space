@@ -5,9 +5,8 @@ import {
   Switch,
   Redirect,
 } from 'react-router-dom';
-import Home from './components/home/Home';
-import Experiment from './components/experiment/Experiment';
-import MainLayout from './components/MainLayout';
+import { Home } from './components/home/Home';
+import { MainLayout } from './components/MainLayout';
 import { Resume } from './components/resume/Resume';
 
 class App extends Component {
@@ -17,7 +16,7 @@ class App extends Component {
         <MainLayout>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/dev" component={Experiment} />
+            {/*<Route exact path="/dev" component={Experiment} />*/}
             <Route exact path="/resume" component={Resume} />
             <Redirect from="*" to="/" />
           </Switch>
