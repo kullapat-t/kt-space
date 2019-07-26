@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/kt-space/static/js/runtime~main.c7403b05.js"
   },
   {
-    "revision": "f4e88127f4a80bb0f8d8",
-    "url": "/kt-space/static/js/main.f4e88127.chunk.js"
+    "revision": "97e6503aa6ce1af2a11a",
+    "url": "/kt-space/static/js/main.97e6503a.chunk.js"
   },
   {
     "revision": "a7c4fe4d4ca7444b055e",
     "url": "/kt-space/static/js/1.a7c4fe4d.chunk.js"
   },
   {
-    "revision": "f4e88127f4a80bb0f8d8",
-    "url": "/kt-space/static/css/main.9a4882b3.chunk.css"
+    "revision": "97e6503aa6ce1af2a11a",
+    "url": "/kt-space/static/css/main.b4bf1198.chunk.css"
   },
   {
-    "revision": "25160044bc311508a923565942816a8f",
+    "revision": "dca90167f3553b02bf35fb70d24c1572",
     "url": "/kt-space/index.html"
   }
 ];
