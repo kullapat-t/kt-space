@@ -30,8 +30,8 @@ const Works = () => {
 
         {/* Alef Education */}
         <div className="Data-header">
-          <span>Alef Education</span>
-          <small>Feb 2018 – present</small>
+          <span className="title">Alef Education</span>
+          <small className="year">Feb 2018 – present</small>
           <span className="sub-title">Abu Dhabi, United Arab Emirates</span>
         </div>
         <dl className="Data-body">
@@ -42,11 +42,12 @@ const Works = () => {
           <dd>- Work in Agile methodology (using Scrum/Kanban)</dd>
           <dd>- Use CircleCI and Jenkins for CI/CD</dd>
         </dl>
+        <hr className="Data-separate-line"/>
 
         {/* Agoda Services Co., Ltd. */}
         <div className="Data-header">
-          <span>Agoda Services Co., Ltd.</span>
-          <small>Sep 2015 - Feb 2018</small>
+          <span className="title">Agoda Services Co., Ltd.</span>
+          <small className="year">Sep 2015 - Feb 2018</small>
           <span className="sub-title">Bangkok, Thailand</span>
         </div>
         <dl className="Data-body">
@@ -56,11 +57,12 @@ const Works = () => {
           <dd>- Use TeamCity for CI/CD</dd>
           <dd>- A/B testing</dd>
         </dl>
+        <hr className="Data-separate-line"/>
 
         {/* True Corporation Public Co., Ltd. */}
         <div className="Data-header">
-          <span>True Corporation Public Co., Ltd.</span>
-          <small>Feb 2014 – Sep 2015</small>
+          <span className="title">True Corporation Public Co., Ltd.</span>
+          <small className="year">Feb 2014 – Sep 2015</small>
           <span className="sub-title">Bangkok, Thailand</span>
         </div>
         <dl className="Data-body">
@@ -68,26 +70,31 @@ const Works = () => {
           <dd>- Work in Agile methodology (using Scrum)</dd>
           <dd>- Use Jenkins tool for CI/CD</dd>
         </dl>
+        <hr className="Data-separate-line"/>
 
         {/* Reuters Software (Thailand) Ltd. */}
         <div className="Data-header">
-          <span>Reuters Software (Thailand) Ltd.</span>
-          <small>Dec 2010 – Jan 2014</small>
+          <span className="title">Reuters Software (Thailand) Ltd.</span>
+          <small className="year">Dec 2010 – Jan 2014</small>
           <span className="sub-title">Bangkok, Thailand</span>
         </div>
         <dl className="Data-body">
           <dt>Software Engineer</dt>
+          <dd> TBD </dd>
           <dt>Quality Assurance Engineer</dt>
+          <dd> TBD </dd>
         </dl>
+        <hr className="Data-separate-line"/>
 
         {/* Summit Computer Co.,Ltd. */}
         <div className="Data-header">
-          <span>Summit Computer Co.,Ltd.</span>
-          <small>Oct 2009 – Nov 2010</small>
+          <span className="title">Summit Computer Co.,Ltd.</span>
+          <small className="year">Oct 2009 – Nov 2010</small>
           <span className="sub-title">Bangkok, Thailand</span>
         </div>
         <dl className="Data-body">
           <dt>Java Programmer</dt>
+          <dd> TBD </dd>
         </dl>
       </div>
 
@@ -103,8 +110,8 @@ const Educations = () => {
       </div>
       <div className="Resume-data__content">
         <div className="Data-header">
-          <span>Chulalongkorn University</span>
-          <small>2009 – 2011</small>
+          <span className="title">Chulalongkorn University</span>
+          <small className="year">2009 – 2011</small>
         </div>
         <dl className="Data-body">
           <dt>Master of science<br/>
@@ -117,8 +124,8 @@ const Educations = () => {
       </div>
       <div className="Resume-data__content">
         <div className="Data-header">
-          <span>Chulalongkorn University</span>
-          <small>2005 – 2009</small>
+          <span className="title">Chulalongkorn University</span>
+          <small className="year">2005 – 2009</small>
         </div>
         <dl className="Data-body">
           <dt>Bachelor of science<br/>

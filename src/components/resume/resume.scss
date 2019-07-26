@@ -32,11 +32,11 @@
           grid-template-columns: 1fr max-content;
           grid-gap: calc(var(--global-space) * 1);
 
-          > span {
+          .title {
             font-weight: bold;
             font-size: 15px;
           }
-          > small {
+          .year {
             color: #aaa;
             font-size: 11px;
             font-style: italic;
@@ -57,6 +57,13 @@
             color: gray;
             font-size: 13px;
           }
+        }
+        &-separate-line {
+          width: 95%;
+          text-align: center;
+          height: 0.9px;
+          background-color: lightgrey;
+          border: none;
         }
       }
       .Skill {
