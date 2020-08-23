@@ -24,7 +24,7 @@ const Works = () => {
   return (
     <div>
       <div className="Resume-data__header">
-        <h2><span>Works</span></h2>
+        <h2><span>Work Experience</span></h2>
       </div>
       <div className="Resume-data__content">
 
@@ -36,11 +36,11 @@ const Works = () => {
         </div>
         <dl className="Data-body">
           <dt>Fullstack developer</dt>
-          <dd>- Implement backend services with Spring boot (Kotlin, Java) and NodeJs</dd>
-          <dd>- Integrate authentication and authorization system with Auth0</dd>
-          <dd>- Build docker image and configure kubernates to run/test feature in some specific environment</dd>
-          <dd>- Work in Agile methodology (using Scrum/Kanban)</dd>
-          <dd>- Use CircleCI and Jenkins for CI/CD</dd>
+          <dd>- Implemented microservices with Spring boot (Kotlin, Java) and Node.JS</dd>
+          <dd>- Implemented admin system for internal users</dd>
+          <dd>- Integrated authentication and authorization system with <a href='https://auth0.com/'>Auth0</a></dd>
+          <dd>- Agile methodology (using Scrum/Kanban)</dd>
+          <dd>- CI/CD: CircleCI, Jenkins, and GoCD</dd>
         </dl>
         <hr className="Data-separate-line"/>
 
@@ -52,9 +52,8 @@ const Works = () => {
         </div>
         <dl className="Data-body">
           <dt>Senior software engineer</dt>
-          <dd>- Implement features on Property page with JavaScript (react)</dd>
-          <dd>- Work in Agile methodology (using Scrum/Kanban)</dd>
-          <dd>- Use TeamCity for CI/CD</dd>
+          <dd>- Implemented Property page with JavaScript (react)</dd>
+          <dd>- Agile methodology (using Scrum/Kanban)</dd>
           <dd>- A/B testing</dd>
         </dl>
         <hr className="Data-separate-line"/>
@@ -67,8 +66,10 @@ const Works = () => {
         </div>
         <dl className="Data-body">
           <dt>Senior system analyst</dt>
-          <dd>- Work in Agile methodology (using Scrum)</dd>
-          <dd>- Use Jenkins tool for CI/CD</dd>
+          <dd>- Product: WeCard by True Money</dd>
+          <dd>Implemented Physical and virtual prepaid card <br></br>
+            by coordinating with global prepaid card processor <a href='https://www.tutuka.com/'>Tutuka</a> from South Africa</dd>
+          <dd>- Product: True money wallet mobile and web application</dd>
         </dl>
         <hr className="Data-separate-line"/>
 
@@ -80,9 +81,14 @@ const Works = () => {
         </div>
         <dl className="Data-body">
           <dt>Software Engineer</dt>
-          <dd> TBD </dd>
+          <dd>- Regression Test Automation (RTA) Framework</dd>
+          <dd>- Automated tools</dd>
+          <dd>- Transition Regression Test Automation (RTA) in Moscow, Russia</dd>
+          <dd>- Reuters Messaging Compliance</dd>
           <dt>Quality Assurance Engineer</dt>
-          <dd> TBD </dd>
+          <dd>- Performance Counter Monitoring System</dd>
+          <dd>- Quality and Progress Dashboard</dd>
+          <dd>- Sense Framework</dd>
         </dl>
         <hr className="Data-separate-line"/>
 
@@ -94,7 +100,7 @@ const Works = () => {
         </div>
         <dl className="Data-body">
           <dt>Java Programmer</dt>
-          <dd> TBD </dd>
+          <dd>- Developed Java APIs and backend services for web application</dd>
         </dl>
       </div>
 
