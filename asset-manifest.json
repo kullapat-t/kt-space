@@ -1,14 +1,14 @@
 {
-  "main.css": "/kt-space/static/css/main.b4bf1198.chunk.css",
-  "main.js": "/kt-space/static/js/main.97e6503a.chunk.js",
-  "main.js.map": "/kt-space/static/js/main.97e6503a.chunk.js.map",
-  "static/js/1.a7c4fe4d.chunk.js": "/kt-space/static/js/1.a7c4fe4d.chunk.js",
-  "static/js/1.a7c4fe4d.chunk.js.map": "/kt-space/static/js/1.a7c4fe4d.chunk.js.map",
+  "main.css": "/kt-space/static/css/main.702374d9.chunk.css",
+  "main.js": "/kt-space/static/js/main.c1a67358.chunk.js",
+  "main.js.map": "/kt-space/static/js/main.c1a67358.chunk.js.map",
+  "static/js/1.c29f6f68.chunk.js": "/kt-space/static/js/1.c29f6f68.chunk.js",
+  "static/js/1.c29f6f68.chunk.js.map": "/kt-space/static/js/1.c29f6f68.chunk.js.map",
   "runtime~main.js": "/kt-space/static/js/runtime~main.c7403b05.js",
   "runtime~main.js.map": "/kt-space/static/js/runtime~main.c7403b05.js.map",
-  "static/media/avatar-gym.jpg": "/kt-space/static/media/avatar-gym.53a21751.jpg",
-  "static/css/main.b4bf1198.chunk.css.map": "/kt-space/static/css/main.b4bf1198.chunk.css.map",
+  "static/media/nitch-logo.jpg": "/kt-space/static/media/nitch-logo.0b65f19e.jpg",
+  "static/css/main.702374d9.chunk.css.map": "/kt-space/static/css/main.702374d9.chunk.css.map",
   "index.html": "/kt-space/index.html",
-  "precache-manifest.1392eb1ef3bf2a6962b80793f2a6d479.js": "/kt-space/precache-manifest.1392eb1ef3bf2a6962b80793f2a6d479.js",
+  "precache-manifest.ba5fe626ddc9488ffec3a1a5eeba5df8.js": "/kt-space/precache-manifest.ba5fe626ddc9488ffec3a1a5eeba5df8.js",
   "service-worker.js": "/kt-space/service-worker.js"
 }
