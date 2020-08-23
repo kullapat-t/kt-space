@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c1a67358bfb3aa0f229f",
+    "revision": "0740724cd5ba9fd9d895",
     "url": "/kt-space/static/css/main.702374d9.chunk.css"
   },
   {
-    "revision": "c1a67358bfb3aa0f229f",
-    "url": "/kt-space/static/js/main.c1a67358.chunk.js"
+    "revision": "0740724cd5ba9fd9d895",
+    "url": "/kt-space/static/js/main.0740724c.chunk.js"
   },
   {
     "revision": "c29f6f68902eaed763d9",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/kt-space/static/media/nitch-logo.0b65f19e.jpg"
   },
   {
-    "revision": "a6570ae76e6db8db3004829b7563d7a1",
+    "revision": "b4b2d193022839494e5a299414bd0a9b",
     "url": "/kt-space/index.html"
   }
 ];

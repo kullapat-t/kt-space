@@ -1,7 +1,7 @@
 {
   "main.css": "/kt-space/static/css/main.702374d9.chunk.css",
-  "main.js": "/kt-space/static/js/main.c1a67358.chunk.js",
-  "main.js.map": "/kt-space/static/js/main.c1a67358.chunk.js.map",
+  "main.js": "/kt-space/static/js/main.0740724c.chunk.js",
+  "main.js.map": "/kt-space/static/js/main.0740724c.chunk.js.map",
   "static/js/1.c29f6f68.chunk.js": "/kt-space/static/js/1.c29f6f68.chunk.js",
   "static/js/1.c29f6f68.chunk.js.map": "/kt-space/static/js/1.c29f6f68.chunk.js.map",
   "runtime~main.js": "/kt-space/static/js/runtime~main.c7403b05.js",
@@ -9,6 +9,6 @@
   "static/media/nitch-logo.jpg": "/kt-space/static/media/nitch-logo.0b65f19e.jpg",
   "static/css/main.702374d9.chunk.css.map": "/kt-space/static/css/main.702374d9.chunk.css.map",
   "index.html": "/kt-space/index.html",
-  "precache-manifest.ba5fe626ddc9488ffec3a1a5eeba5df8.js": "/kt-space/precache-manifest.ba5fe626ddc9488ffec3a1a5eeba5df8.js",
+  "precache-manifest.b605da150352524eb93db02c046d9c12.js": "/kt-space/precache-manifest.b605da150352524eb93db02c046d9c12.js",
   "service-worker.js": "/kt-space/service-worker.js"
 }
