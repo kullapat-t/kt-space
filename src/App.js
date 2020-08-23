@@ -8,6 +8,7 @@ import {
 import { Home } from './components/home/Home';
 import { MainLayout } from './components/MainLayout';
 import { Resume } from './components/resume/Resume';
+// import { Experiment } from './components/experiment/Experiment';
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
         <MainLayout>
           <Switch>
             <Route exact path="/" component={Home} />
-            {/*<Route exact path="/dev" component={Experiment} />*/}
+            {/* <Route exact path="/dev" component={Experiment} /> */}
             <Route exact path="/resume" component={Resume} />
             <Redirect from="*" to="/" />
           </Switch>

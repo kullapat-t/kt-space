@@ -1,0 +1,17 @@
+.Menu {
+    .button {
+        display: inline-block;
+        padding: 2px 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #999;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 14px;
+    }
+    a:hover, a:focus, a:active {
+        border: 1px solid black;
+        color: black;
+    }
+}

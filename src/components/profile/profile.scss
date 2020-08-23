@@ -1,19 +1,20 @@
 .Profile {
   text-align: center;
+  color: #000000;
 
   &-avatar {
-    width: 200px;
-    border-radius: 80px;
+    width: 400px;
+    // border-radius: 80px;
   }
   
   &-icon {
-    color: #ffffff;
+    color: #000000;
     margin: 0 10px 0 10px;
   }
 
   .bar {
-    width: 30%;
+    width: 20%;
     border: none;
-    border-top: 1px solid rgba(255,255,255,.14);
+    border-top: 1px solid #999;
   }
 }

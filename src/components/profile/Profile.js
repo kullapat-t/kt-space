@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../../assets/images/avatar-gym.jpg';
+import avatar from '../../assets/images/nitch-logo.jpg';
 import './profile.scss';
 
 const Contact = () => {
@@ -29,9 +29,9 @@ const Profile = () => {
   return (
     <div className="Profile">
       <img src={avatar} className="Profile-avatar" alt="logo" />
-      <div className="Profile-title">Kullapat Theera-angkananon</div>
+      <div className="Profile-title">ᴋᴜʟʟᴀᴘᴀᴛ ᴛʜᴇᴇʀᴀ-ᴀɴɢᴋᴀɴᴀɴᴏɴ</div>
       <hr className="bar"/>
-      <span>Full Stack Developer</span>
+      <span>&lt;𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓/&gt;</span>
       <hr className="bar"/>
       <Contact/>
     </div>
