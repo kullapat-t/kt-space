@@ -1,0 +1,26 @@
+.Toastify {
+    &__toast {
+      min-height: auto;
+      border-radius: 4px;
+      padding: floor(16px * 1.5);
+      
+      &--success { background: #16b791; }
+      &--info { background: #1a81cc; }
+      &--warning { background: #f48535; }
+      &--error { background: #ef476f; }
+  
+      &-body {
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(247, 242, 242);
+        line-height: normal;
+        margin: 0;
+      }
+    }
+  
+    &__close-button {
+      position: absolute;
+      right: 10px;
+      line-height: normal;
+    }
+}
