@@ -7,7 +7,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 import { Home } from './components/home/Home';
-import { MainLayout } from './components/MainLayout';
+import { MainLayout } from './components/layout/MainLayout';
 import { Resume } from './components/resume/Resume';
 import { toast } from 'react-toastify'
 

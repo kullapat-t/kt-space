@@ -1,5 +1,6 @@
 .Header {
   text-align: center;
+  font-size: 14px;
 
   &-inner {
     padding: 20px 50px 20px 50px;
@@ -11,18 +12,17 @@
     > a {
       color: rgba(86, 86, 86, 0.78);
       margin: 0 1em;
-      padding: .618em 0;
-      font-weight: 400;
-      font-family: proxima-nova;
-      font-size: 18px;
       letter-spacing: 0em;
-      text-transform: uppercase;
       text-decoration: none;
     }
     a:hover {
       color: black;
       transition: color 1s;
-      // todo transition: color 1s, padding 0.4s, letter-spacing 0.4s;
+      // transition: color 1s, padding 0.4s, letter-spacing 0.4s;
     }
+  }
+
+  &-under-construct {
+    text-decoration: line-through !important;
   }
 }

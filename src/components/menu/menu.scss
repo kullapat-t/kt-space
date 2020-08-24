@@ -14,6 +14,7 @@
     a:hover, a:focus, a:active {
         border: 1px solid #ccc;
         color: #999;
+        transition: color 1s;
     }
 
     .text {
