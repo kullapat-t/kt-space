@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/kt-space/static/css/main.4043e92a.chunk.css",
-    "main.js": "/kt-space/static/js/main.1c3402fd.chunk.js",
-    "main.js.map": "/kt-space/static/js/main.1c3402fd.chunk.js.map",
+    "main.css": "/kt-space/static/css/main.f43676be.chunk.css",
+    "main.js": "/kt-space/static/js/main.a94d8f2e.chunk.js",
+    "main.js.map": "/kt-space/static/js/main.a94d8f2e.chunk.js.map",
     "runtime-main.js": "/kt-space/static/js/runtime-main.0de80baa.js",
     "runtime-main.js.map": "/kt-space/static/js/runtime-main.0de80baa.js.map",
     "static/js/2.6f8e81de.chunk.js": "/kt-space/static/js/2.6f8e81de.chunk.js",
     "static/js/2.6f8e81de.chunk.js.map": "/kt-space/static/js/2.6f8e81de.chunk.js.map",
     "index.html": "/kt-space/index.html",
-    "precache-manifest.cb4a67862ea2acc58ae26cbd32128176.js": "/kt-space/precache-manifest.cb4a67862ea2acc58ae26cbd32128176.js",
+    "precache-manifest.bd22b92433877bdda6c978366b86b52a.js": "/kt-space/precache-manifest.bd22b92433877bdda6c978366b86b52a.js",
     "service-worker.js": "/kt-space/service-worker.js",
-    "static/css/main.4043e92a.chunk.css.map": "/kt-space/static/css/main.4043e92a.chunk.css.map",
+    "static/css/main.f43676be.chunk.css.map": "/kt-space/static/css/main.f43676be.chunk.css.map",
     "static/js/2.6f8e81de.chunk.js.LICENSE.txt": "/kt-space/static/js/2.6f8e81de.chunk.js.LICENSE.txt",
     "static/media/nitch-logo.jpg": "/kt-space/static/media/nitch-logo.0b65f19e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0de80baa.js",
     "static/js/2.6f8e81de.chunk.js",
-    "static/css/main.4043e92a.chunk.css",
-    "static/js/main.1c3402fd.chunk.js"
+    "static/css/main.f43676be.chunk.css",
+    "static/js/main.a94d8f2e.chunk.js"
   ]
 }
