@@ -10,7 +10,7 @@ export const Header = () => {
       <div className="Header-inner Header-bar">
         {isAuthenticated && (<>{user.name} ({user.email}) |</>)}
         <a href='#/'>HOME</a>
-        <a href='#/about' className='Header-under-construct'>about</a>
+        <a href='#/about'>about</a>
         <a href='#/resume'>kt - resume</a>
         <a href='#/contact' className='Header-under-construct'>contact</a>
       </div>

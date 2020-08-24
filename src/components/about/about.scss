@@ -1,0 +1,22 @@
+.About {
+    text-align: center;
+    background-image: url('../../assets/images/about-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    .blur-backdrop {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.3);
+      border: 1px rgba(86, 86, 86, 0.78) solid;
+      border-radius: 6px;
+      padding: 0 10px;
+      margin: 5px 0;
+    }
+}

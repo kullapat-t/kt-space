@@ -9,6 +9,7 @@ import {
 import { Home } from './components/home/Home';
 import { MainLayout } from './components/layout/MainLayout';
 import { Resume } from './components/resume/Resume';
+import About from './components/about/About';
 import { toast } from 'react-toastify'
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           {/* <Route exact path="/dev" component={Experiment} /> */}
+          <Route exact path="/about" component={About} />
           <Route exact path="/resume" component={Resume} />
           <Redirect from="*" to="/" />
         </Switch>
