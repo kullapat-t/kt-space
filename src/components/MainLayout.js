@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './layout/Header';
 import { Footer } from './layout/Footer';
+import { ToastContainer } from 'react-toastify'
 import './mainlayout.scss';
 
 export const MainLayout = ({children}) => {
@@ -8,6 +9,7 @@ export const MainLayout = ({children}) => {
     <div className="MainLayout">
       <Header/>
       <div>{children}</div>
+      <ToastContainer />
       <Footer/>
     </div>
   );

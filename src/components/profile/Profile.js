@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <nav>
       <a
-        rel="me"
+        rel="me noopener noreferrer"
         target="_blank"
         href="https://www.linkedin.com/in/kullapat-t/"
         title="Go to -> LinkedIn"
@@ -14,7 +14,7 @@ const Contact = () => {
         <i className="Profile-icon fa fa-linkedin-square" />
       </a>
       <a
-        rel="me"
+        rel="me noopener noreferrer"
         target="_blank"
         href="https://github.com/kullapat-t/"
         title="Go to -> Github"
