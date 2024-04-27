@@ -1,7 +1,7 @@
 # kt-space
 
-## Prerequisite
-    brew install redis
+### Prerequisite
+    
 
 ### How to run?
     npm start
