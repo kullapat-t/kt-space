@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from './Header'
 import { Footer } from './Footer'
-import { ToastContainer } from 'react-toastify'
+import { Flip, ToastContainer } from 'react-toastify'
 import './mainlayout.scss'
 
 export const MainLayout = ({children}) => {
@@ -9,7 +9,13 @@ export const MainLayout = ({children}) => {
     <div className="MainLayout">
       <Header/>
       <div>{children}</div>
-      <ToastContainer />
+      <ToastContainer
+          id='mainContainerId'
+          theme="light"
+          transition={ Flip }
+          closeOnClick
+          draggable
+      />
       <Footer/>
     </div>
   )
