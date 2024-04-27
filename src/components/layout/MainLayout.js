@@ -1,8 +1,8 @@
-import React from 'react';
-import { Header } from './Header';
-import { Footer } from './Footer';
+import React from 'react'
+import { Header } from './Header'
+import { Footer } from './Footer'
 import { ToastContainer } from 'react-toastify'
-import './mainlayout.scss';
+import './mainlayout.scss'
 
 export const MainLayout = ({children}) => {
   return (
@@ -12,5 +12,5 @@ export const MainLayout = ({children}) => {
       <ToastContainer />
       <Footer/>
     </div>
-  );
-};
+  )
+}
