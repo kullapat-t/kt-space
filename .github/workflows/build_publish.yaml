@@ -5,6 +5,11 @@ on:
 #  push:
 #    branches: [ master ]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  
 jobs:
   build_publish:
     runs-on: ubuntu-latest
@@ -12,9 +17,15 @@ jobs:
       matrix:
         node-version: [ 20.x ]
     steps:
-      - uses: actions/checkout@v4
-      - name: build
-        run: |
-          node --version
-          npm ci
-          npm run deploy
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
