@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kt-space/static/css/main.10e81cba.css",
-    "main.js": "/kt-space/static/js/main.0316d051.js",
+    "main.js": "/kt-space/static/js/main.d6826b19.js",
     "static/media/about-bg.jpg": "/kt-space/static/media/about-bg.30a0400104b79b655e59.jpg",
     "static/media/nitch-logo.jpg": "/kt-space/static/media/nitch-logo.fa831f6f2d0700c01028.jpg",
     "index.html": "/kt-space/index.html",
     "main.10e81cba.css.map": "/kt-space/static/css/main.10e81cba.css.map",
-    "main.0316d051.js.map": "/kt-space/static/js/main.0316d051.js.map"
+    "main.d6826b19.js.map": "/kt-space/static/js/main.d6826b19.js.map"
   },
   "entrypoints": [
     "static/css/main.10e81cba.css",
-    "static/js/main.0316d051.js"
+    "static/js/main.d6826b19.js"
   ]
 }
