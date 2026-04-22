@@ -9,10 +9,10 @@ export const Header = () => {
     <nav className="Header">
       <div className="Header-inner Header-bar">
         {isAuthenticated && (<>{user.name} ({user.email}) |</>)}
-        <a href='#/'>HOME</a>
-        <a href='#/about'>about</a>
-        <a href='#/resume'>kt - resume</a>
-        <a href='#/contact' className='Header-under-construct'>contact</a>
+        <a href='#/'>Home</a>
+        <a href='#/about'>About me</a>
+        <a href='#/cv'>CV</a>
+        <a href='#/contact' className='Header-under-construct'>Contact</a>
       </div>
     </nav>
   )

@@ -39,7 +39,7 @@ const App = () => {
           <Route exact path="/" element={ <Home/> } />
           {/* <Route exact path="/dev" component={ <Experiment/> } /> */}
           <Route exact path="/about" element={ <About/> } />
-          <Route exact path="/resume" element={ <Resume/> } />
+          <Route exact path="/cv" element={ <Resume/> } />
           <Route path='*' element={<Navigate replace={true} to="/" />} />
         </Routes>
       </MainLayout>

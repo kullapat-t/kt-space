@@ -9,11 +9,9 @@ const Skills = () => {
       </div>
       <div className="Resume-data__content">
         <dl className="Skill">
-          <div>Kotlin</div>
-          <div>Java</div>
-          <div>JavaScript</div>
-          <div>C#</div>
-          <div>Groovy</div>
+          <div><strong>Backend:</strong> Kotlin, Java, Node.js</div>
+          <div><strong>Frontend:</strong> JavaScript (React)</div>
+          <div><strong>Other:</strong> C#, Groovy</div>
         </dl>
       </div>
     </div>
@@ -35,12 +33,13 @@ const Works = () => {
           <span className="sub-title">Abu Dhabi, United Arab Emirates</span>
         </div>
         <dl className="Data-body">
-          <dt>Fullstack developer</dt>
-          <dd>- Implemented microservices with Spring boot (Kotlin, Java) and Node.JS</dd>
-          <dd>- Implemented admin system for internal users</dd>
-          <dd>- Integrated authentication and authorization system with <a href='https://auth0.com/'>Auth0</a></dd>
-          <dd>- Agile methodology (using Scrum/Kanban)</dd>
-          <dd>- CI/CD: CircleCI, Jenkins, and GoCD</dd>
+          <dt>Senior Full Stack Developer (Remote)</dt>
+          <dd>- Developed and maintained internal admin platform supporting operational workflows</dd>
+          <dd>- Designed and implemented automated API testing to improve system reliability and coverage</dd>
+          <dd>- Led development of microservices using Spring Boot (Kotlin, Java) and Node.js</dd>
+          <dd>- Integrated authentication and authorization using <a href='https://auth0.com/'>Auth0</a></dd>
+          <dd>- Built and maintained CI/CD pipelines (GithubAction, CircleCI, Jenkins, GoCD)</dd>
+          <dd>- Worked in Agile environments (Scrum/Kanban)</dd>
         </dl>
         <hr className="Data-separate-line"/>
 
@@ -51,10 +50,10 @@ const Works = () => {
           <span className="sub-title">Bangkok, Thailand</span>
         </div>
         <dl className="Data-body">
-          <dt>Senior software engineer</dt>
-          <dd>- Implemented Property page with JavaScript (react)</dd>
-          <dd>- Agile methodology (using Scrum/Kanban)</dd>
-          <dd>- A/B testing</dd>
+          <dt>Senior Software Engineer</dt>
+          <dd>- Developed and optimized property page using React.js</dd>
+          <dd>- Conducted A/B testing to improve user experience and conversion</dd>
+          <dd>- Collaborated in Agile teams (Scrum/Kanban)</dd>
         </dl>
         <hr className="Data-separate-line"/>
 
@@ -65,11 +64,9 @@ const Works = () => {
           <span className="sub-title">Bangkok, Thailand</span>
         </div>
         <dl className="Data-body">
-          <dt>Senior system analyst</dt>
-          <dd>- Product: WeCard by True Money</dd>
-          <dd>Implemented Physical and virtual prepaid card <br></br>
-            by coordinating with global prepaid card processor <a href='https://www.tutuka.com/'>Tutuka</a> from South Africa</dd>
-          <dd>- Product: True money wallet mobile and web application</dd>
+          <dt>Senior System Analyst</dt>
+          <dd>- Delivered prepaid card system (physical and virtual) integrated with global processor <a href='https://www.tutuka.com/'>Tutuka</a></dd>
+          <dd>- Contributed to TrueMoney Wallet (mobile and web)</dd>
         </dl>
         <hr className="Data-separate-line"/>
 
@@ -80,15 +77,9 @@ const Works = () => {
           <span className="sub-title">Bangkok, Thailand</span>
         </div>
         <dl className="Data-body">
-          <dt>Software Engineer</dt>
-          <dd>- Regression Test Automation (RTA) Framework</dd>
-          <dd>- Automated tools</dd>
-          <dd>- Transition Regression Test Automation (RTA) in Moscow, Russia</dd>
-          <dd>- Reuters Messaging Compliance</dd>
-          <dt>Quality Assurance Engineer</dt>
-          <dd>- Performance Counter Monitoring System</dd>
-          <dd>- Quality and Progress Dashboard</dd>
-          <dd>- Sense Framework</dd>
+          <dt>Software Engineer / QA Engineer</dt>
+          <dd>- Built regression test automation framework and internal tools</dd>
+          <dd>- Supported compliance systems and performance monitoring dashboards</dd>
         </dl>
         <hr className="Data-separate-line"/>
 
@@ -100,7 +91,7 @@ const Works = () => {
         </div>
         <dl className="Data-body">
           <dt>Java Programmer</dt>
-          <dd>- Developed Java APIs and backend services for web application</dd>
+          <dd>- Developed backend APIs and services for web applications</dd>
         </dl>
       </div>
 

@@ -13,7 +13,7 @@ const Menu = () => {
   return (
       <nav id="navigation" className="Menu">
         <div className="menu">
-          <a className="button" href="#/resume">kt - resume</a> | {!isAuthenticated ? loginButton : <LogoutButton/> }
+          <a className="button" href="#/cv">kt - cv</a> | {!isAuthenticated ? loginButton : <LogoutButton/> }
         </div>
       </nav>
   )
