@@ -9,9 +9,11 @@ const Skills = () => {
       </div>
       <div className="Resume-data__content">
         <dl className="Skill">
-          <div><strong>Backend:</strong> Kotlin, Java, Node.js</div>
-          <div><strong>Frontend:</strong> JavaScript (React)</div>
-          <div><strong>Other:</strong> C#, Groovy</div>
+          <div>Kotlin</div>
+          <div>Java</div>
+          <div>JavaScript</div>
+          <div>C#</div>
+          <div>Groovy</div>
         </dl>
       </div>
     </div>

@@ -10,6 +10,7 @@ import { Home } from './components/home/Home'
 import { MainLayout } from './components/layout/MainLayout'
 import { Resume } from './components/resume/Resume'
 import About from './components/about/About'
+import Projects from './components/projects/Projects'
 import { toast } from 'react-toastify'
 
 const App = () => {
@@ -37,9 +38,9 @@ const App = () => {
       <MainLayout>
         <Routes>
           <Route exact path="/" element={ <Home/> } />
-          {/* <Route exact path="/dev" component={ <Experiment/> } /> */}
           <Route exact path="/about" element={ <About/> } />
           <Route exact path="/cv" element={ <Resume/> } />
+          <Route exact path="/projects" element={ <Projects/> } />
           <Route path='*' element={<Navigate replace={true} to="/" />} />
         </Routes>
       </MainLayout>

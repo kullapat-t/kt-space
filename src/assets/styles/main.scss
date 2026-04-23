@@ -1,4 +1,52 @@
+// ── Theme tokens ──────────────────────────────────────────────────────────────
+
+:root {
+  // Light mode (default)
+  // --color-bg:           #f5f5f7;
+  --color-bg:           #ffffff;
+  --color-bg-alt:       #e8e8ea;
+  --color-text:         #1d1d1f;
+  --color-text-muted:   #636366;
+  --color-accent:       #b83a2a;
+  --color-accent-sub:   #fdf0ee;
+  --color-border:       #d2d2d7;
+
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body:    'Chivo', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+}
+
+[data-theme="dark"] {
+  --color-bg:           #101012;
+  --color-bg-alt:       #1c1c1f;
+  --color-text:         #f0f0f2;
+  --color-text-muted:   #8e8e93;
+  --color-accent:       #e05a4a;
+  --color-accent-sub:   #2a1411;
+  --color-border:       #2c2c2e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    --color-bg:           #101012;
+    --color-bg-alt:       #1c1c1f;
+    --color-text:         #f0f0f2;
+    --color-text-muted:   #8e8e93;
+    --color-accent:       #e05a4a;
+    --color-accent-sub:   #2a1411;
+    --color-border:       #2c2c2e;
+  }
+}
+
+// ── Toastify ──────────────────────────────────────────────────────────────────
 
 @import '~react-toastify/scss/main';
-
 @import '~react-toastify/dist/ReactToastify.css';

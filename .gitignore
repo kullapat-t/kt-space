@@ -23,3 +23,9 @@ yarn-error.log*
 
 # Intellij
 /.idea
+
+# Others
+.agents
+.claude/*
+.impeccable.md
+skills-lock.json

@@ -16,10 +16,11 @@
         border-bottom: 1px solid #000;
         line-height: 0.1em;
         margin: 10px 0 20px;
+        background-color: lightgrey;
       }
 
       h2 span {
-        background:#fff;
+        background: var(--color-bg);
         padding:0 10px;
       }
     }
