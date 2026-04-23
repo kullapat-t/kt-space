@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kt-space/static/css/main.10e81cba.css",
-    "main.js": "/kt-space/static/js/main.98a09d1e.js",
-    "static/media/about-bg.jpg": "/kt-space/static/media/about-bg.30a0400104b79b655e59.jpg",
+    "main.css": "/kt-space/static/css/main.f77bdcd3.css",
+    "main.js": "/kt-space/static/js/main.d7704a6e.js",
+    "static/media/avatar-gym.jpg": "/kt-space/static/media/avatar-gym.8126ca5ccfc9f7dd3c1a.jpg",
     "static/media/nitch-logo.jpg": "/kt-space/static/media/nitch-logo.fa831f6f2d0700c01028.jpg",
     "index.html": "/kt-space/index.html",
-    "main.10e81cba.css.map": "/kt-space/static/css/main.10e81cba.css.map",
-    "main.98a09d1e.js.map": "/kt-space/static/js/main.98a09d1e.js.map"
+    "main.f77bdcd3.css.map": "/kt-space/static/css/main.f77bdcd3.css.map",
+    "main.d7704a6e.js.map": "/kt-space/static/js/main.d7704a6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.10e81cba.css",
-    "static/js/main.98a09d1e.js"
+    "static/css/main.f77bdcd3.css",
+    "static/js/main.d7704a6e.js"
   ]
 }
