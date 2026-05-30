@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import './header.scss';
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('kt-theme') || 'auto';
+    return localStorage.getItem('kt-theme') || 'dark';
   });
 
   useEffect(() => {
@@ -41,11 +42,11 @@ export const Header = () => {
         {isAuthenticated && (
           <span className="Header-user">{user.name} ({user.email})</span>
         )}
-        <a href='#/'>Home</a>
-        <a href='#/about'>About</a>
-        <a href='#/cv'>CV</a>
-        <a href='#/projects'>Projects</a>
-        <a href='#/contact' className='Header-under-construct'>Contact</a>
+        <NavLink to="/" end className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>Home</NavLink>
+        <NavLink to="/experience" className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>Experience</NavLink>
+        <NavLink to="/projects" className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>Projects</NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>About</NavLink>
+        <NavLink to="/contact" className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>Contact</NavLink>
         <ThemeToggle />
       </div>
     </nav>

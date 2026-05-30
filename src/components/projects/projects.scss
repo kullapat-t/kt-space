@@ -1,40 +1,194 @@
+// Uses shared @keyframes fade-up from main.scss
+
 .Projects {
-  padding: 60px 48px 96px;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: var(--space-3xl) var(--space-2xl) var(--space-4xl);
   font-family: var(--font-body);
   color: var(--color-text);
+  animation: fade-up 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @media (max-width: 600px) {
+    padding: var(--space-xl) var(--space-md) var(--space-3xl);
+  }
+
+  // ── Header ──────────────────────────────────────────────────────────────────
+
+  &-header {
+    margin-bottom: var(--space-3xl);
+  }
 
   &-eyebrow {
     display: block;
     font-family: var(--font-display);
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--color-accent);
-    margin-bottom: 20px;
+    margin-bottom: var(--space-sm);
   }
 
-  &-headline {
+  &-title {
     font-family: var(--font-display);
     font-size: clamp(52px, 7.5vw, 96px);
-    font-weight: 800;
-    line-height: 0.92;
+    font-weight: 900;
+    line-height: 0.9;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: var(--color-text);
-    margin: 0 0 28px;
-  }
-
-  &-note {
-    font-size: 16px;
-    color: var(--color-text-muted);
-    font-weight: 300;
     margin: 0;
   }
 
-  @media (max-width: 600px) {
-    padding: 32px 20px 60px;
+  // ── Grid ─────────────────────────────────────────────────────────────────────
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-3xl);
+  }
+
+  // ── Card ─────────────────────────────────────────────────────────────────────
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-xl);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background: var(--color-bg-alt);
+    text-decoration: none;
+    color: inherit;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: border-color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                background 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--color-accent);
+      box-shadow: 0 6px 32px var(--glow-warm, rgba(184, 58, 42, 0.12));
+      transform: translateY(-2px);
+
+      [data-theme="dark"] & {
+        box-shadow: 0 0 32px var(--glow-warm, rgba(224, 90, 74, 0.18));
+        transform: none;
+      }
+
+      .Projects-card-arrow {
+        transform: translate(3px, -3px);
+      }
+    }
+
+    &--placeholder {
+      border-style: dashed;
+      opacity: 0.6;
+    }
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-tag {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    &-arrow {
+      font-size: 14px;
+      color: var(--color-text-muted);
+      transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    &-title {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--color-text);
+      margin: 0;
+    }
+
+    &-desc {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin: 0;
+      flex: 1;
+    }
+
+    &-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: var(--space-xs);
+    }
+
+    &-chip {
+      font-family: var(--font-display);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      padding: 3px 8px;
+      border: 1px solid var(--color-border);
+    }
+  }
+
+  // ── CTA ──────────────────────────────────────────────────────────────────────
+
+  &-cta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--color-border);
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-sm);
+    }
+
+    &-text {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--color-text-muted);
+      margin: 0;
+    }
+
+    &-link {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+
+      .fa {
+        transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      &:hover .fa {
+        transform: translateX(5px);
+      }
+    }
   }
 }

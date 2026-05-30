@@ -1,0 +1,180 @@
+// Uses shared @keyframes fade-up from main.scss
+
+.Contact {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-2xl) var(--space-4xl);
+  font-family: var(--font-body);
+  color: var(--color-text);
+  animation: fade-up 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @media (max-width: 600px) {
+    padding: var(--space-xl) var(--space-md) var(--space-3xl);
+  }
+
+  // ── Decorative bg text — clipped to this container ───────────────────────────
+
+  &-bg-text {
+    position: absolute;
+    bottom: var(--space-2xl);
+    right: -12px;
+    font-family: var(--font-display);
+    font-size: clamp(80px, 18vw, 220px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: var(--color-border);
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+    opacity: 0.55;
+    z-index: 0;
+
+    @media (max-width: 500px) {
+      font-size: 80px;
+      bottom: var(--space-md);
+    }
+  }
+
+  // ── Body (sits above bg-text) ────────────────────────────────────────────────
+
+  &-body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+  }
+
+  // ── Header ───────────────────────────────────────────────────────────────────
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  &-eyebrow {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  &-title {
+    font-family: var(--font-display);
+    font-size: clamp(56px, 10vw, 120px);
+    font-weight: 900;
+    line-height: 0.88;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin: 0;
+
+    &-accent {
+      color: var(--color-accent);
+    }
+  }
+
+  &-intro {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin: 0;
+    max-width: 44ch;
+  }
+
+  // ── Links list ───────────────────────────────────────────────────────────────
+
+  &-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--color-border);
+  }
+
+  &-link-item {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg) 0;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                gap 0s;           // don't animate gap
+
+    &:hover {
+      color: var(--color-accent);
+
+      .Contact-link-arrow {
+        transform: translateX(6px);
+        opacity: 1;
+      }
+
+      .Contact-link-value {
+        opacity: 1;
+      }
+    }
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      flex-shrink: 0;
+      width: 140px;
+
+      @media (max-width: 500px) {
+        width: 110px;
+        gap: var(--space-sm);
+      }
+    }
+
+    &-icon {
+      font-size: 20px;
+      width: 24px;
+      text-align: center;
+      flex-shrink: 0;
+      color: var(--color-accent);
+    }
+
+    &-label {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    &-value {
+      flex: 1;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--color-text-muted);
+      opacity: 0.7;
+      transition: opacity 0.2s;
+
+      @media (max-width: 500px) {
+        display: none;    // too cramped on small screens
+      }
+    }
+
+    &-arrow {
+      font-size: 16px;
+      opacity: 0.3;
+      transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  opacity 0.2s;
+      flex-shrink: 0;
+    }
+  }
+}

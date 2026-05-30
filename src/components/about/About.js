@@ -27,8 +27,8 @@ const About = () => {
 
       <section className="About-stats" aria-label="Quick stats">
         <div className="About-stats__item">
-          <span className="About-stats__value">50</span>
-          <span className="About-stats__label">KM / WEEK</span>
+          <span className="About-stats__value">Remote</span>
+          <span className="About-stats__label">WORK MODE</span>
         </div>
         <div className="About-stats__item">
           <span className="About-stats__value">15+</span>
@@ -60,23 +60,23 @@ const About = () => {
         <div className="About-narrative__item">
           <span className="About-narrative__num">02</span>
           <div className="About-narrative__body">
-            <h3>The Training</h3>
+            <h3>The Approach</h3>
             <p>
-              Trains consistently — running around 50 km per week alongside
-              strength training. Sets specific goals and tracks progress over
-              time, aiming to improve performance while maintaining overall
-              fitness and health.
+              Evaluates options carefully, understands how things work, and makes decisions
+              based on evidence. Discipline and consistency over shortcuts. Balances long-term goals in fitness, work,
+              and investing with day-to-day constraints.
             </p>
           </div>
         </div>
         <div className="About-narrative__item">
           <span className="About-narrative__num">03</span>
           <div className="About-narrative__body">
-            <h3>The Approach</h3>
+            <h3>The Training</h3>
             <p>
-              Evaluates options carefully, understands how things work, and makes decisions
-              based on evidence. Discipline and consistency over shortcuts. Balances long-term goals in fitness, work,
-              and investing with day-to-day constraints.
+              Trains consistently — running around 50 km per week alongside
+              strength training. Sets specific goals and tracks progress over
+              time, aiming to improve performance while maintaining overall
+              fitness and health.
             </p>
           </div>
         </div>

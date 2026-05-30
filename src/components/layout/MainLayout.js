@@ -8,7 +8,7 @@ export const MainLayout = ({children}) => {
   return (
     <div className="MainLayout">
       <Header/>
-      <div>{children}</div>
+      <main className="MainLayout-content">{children}</main>
       <ToastContainer
           id='mainContainerId'
           theme="light"
