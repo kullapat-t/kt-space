@@ -41,10 +41,10 @@ const Contact = () => {
           <span className="Contact-eyebrow">Get in touch</span>
           <h1 className="Contact-title">
             Say<br />
-            <span className="Contact-title-accent">Hello.</span>
+            <span className="Contact-title-accent">Hello</span>
           </h1>
           <p className="Contact-intro">
-            Feel free to follow along or reach out directly.
+            Feel free to follow along or reach out directly
           </p>
         </header>
 

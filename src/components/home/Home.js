@@ -19,7 +19,7 @@ export const Home = () => {
         </div>
 
         <div className="Home-content">
-          <p className="Home-eyebrow">Senior Full Stack Developer</p>
+          <p className="Home-eyebrow">Full Stack Developer</p>
           <h1 className="Home-name">
             <span className="Home-name-line">Kullapat</span>
             <span className="Home-name-line Home-name-line--accent">Theera-Angkananon</span>

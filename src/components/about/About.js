@@ -12,11 +12,11 @@ const About = () => {
           <h1 className="About-headline">
             Programmer<br />
             <em>&amp; Endurance</em><br />
-            Runner.
+            Runner
           </h1>
           <p className="About-intro">
             Focused on steady progress and measurable results — in code,
-            in training, and in everything else worth doing.
+            in training, and in everything else worth doing
           </p>
         </div>
         <div className="About-hero__photo">

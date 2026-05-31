@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import './header.scss';
 
@@ -33,8 +33,32 @@ const ThemeToggle = () => {
   );
 };
 
+const navLink = (to, label, end, onClick) => (
+  <NavLink
+    to={to}
+    end={end}
+    className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}
+    onClick={onClick}
+  >
+    {label}
+  </NavLink>
+);
+
 export const Header = () => {
   const { user, isAuthenticated } = useAuth0();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
+
+  const close = () => setMenuOpen(false);
 
   return (
     <nav className="Header">
@@ -42,12 +66,38 @@ export const Header = () => {
         {isAuthenticated && (
           <span className="Header-user">{user.name} ({user.email})</span>
         )}
-        <NavLink to="/" end className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>Home</NavLink>
-        <NavLink to="/experience" className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>Experience</NavLink>
-        <NavLink to="/projects" className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>Projects</NavLink>
-        <NavLink to="/about" className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>About</NavLink>
-        <NavLink to="/contact" className={({ isActive }) => isActive ? 'Header-link Header-link--active' : 'Header-link'}>Contact</NavLink>
+
+        {/* Desktop nav */}
+        <div className="Header-nav Header-nav--desktop">
+          {navLink('/', 'Home', true)}
+          {navLink('/experience', 'Experience')}
+          {navLink('/projects', 'Projects')}
+          {navLink('/about', 'About')}
+          {navLink('/contact', 'Contact')}
+        </div>
+
         <ThemeToggle />
+
+        {/* Hamburger */}
+        <button
+          className={`Header-hamburger ${menuOpen ? 'Header-hamburger--open' : ''}`}
+          onClick={() => setMenuOpen(o => !o)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+
+      {/* Mobile drawer */}
+      <div className={`Header-drawer ${menuOpen ? 'Header-drawer--open' : ''}`} aria-hidden={!menuOpen}>
+        {navLink('/', 'Home', true, close)}
+        {navLink('/experience', 'Experience', false, close)}
+        {navLink('/projects', 'Projects', false, close)}
+        {navLink('/about', 'About', false, close)}
+        {navLink('/contact', 'Contact', false, close)}
       </div>
     </nav>
   );
